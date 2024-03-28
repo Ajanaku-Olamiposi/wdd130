@@ -3,6 +3,7 @@ body{
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    /* use ctrl+/ to write a comment */
 }
 :root{
     --primary-color:#FFD791 ;
