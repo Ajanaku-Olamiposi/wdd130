@@ -53,3 +53,7 @@ footer {
 	font-weight: 700;
 	font-style: italic;
 }
+.stats{
+	bottom: 25px;
+	left:15px
+}
