@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 /* add a comment here */
 :root{
-    --primary-color:#FFD791 ;
-    --secondary-color:#FFB691;
+    --primary-color:#2b0755 ;
+    --secondary-color:#372974;
     --accent1-color:#FFB691;
     --accent2-color:#FFD791 ;
 
     --heading-font:'Rock Salt', serif;
     --paragraph-font:roboto, serif;
 
-    --nav-background-color:#9298F0;
+    --nav-background-color:#2a073a;
     --nav-link-color:#9298F0;
     --nav-hover-link-color:#9298F0;
-    --nav-hover-background-color:#9298F0;
+    --nav-hover-background-color:#dedfe9;
 }
 body{
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 360px;
     padding: 20px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
-}
-header{
-    padding: 20px;
-    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 p {
     padding: 25px;
+    color: var(--secondary-color)
 }
 nav{
     background-color: var(--nav-background-color);
@@ -47,4 +44,18 @@ nav a:link, nav a:visited{
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+.hero{
+    position: relative;
+}
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+article {
+    position: absolute;
+} 
+h1{
+    position: absolute;
 }
