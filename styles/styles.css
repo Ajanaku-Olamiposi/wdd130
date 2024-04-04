@@ -5,15 +5,22 @@
   }
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 h1 {
     color: steelblue;
+    border-bottom:1px solid steelblue;
 }
 main img {
     width: 150px;
@@ -25,9 +32,6 @@ main img {
 }
 p {
     padding: 0;
-}
-main {
-    max-width: 840px;
 }
 aside {
     width: 20rem;
@@ -56,11 +60,38 @@ footer{
   color: #000;
 } 
 aside {
-  width: 20em;
-  text-align: center;
+  position: relative;
 }
 aside h2 {
     position: absolute;
     top: 47px;
     left: 150px;
   }
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    width: 20rem;
+    position:relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+UL{
+    justify-self: flex-start;
+}
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+}
