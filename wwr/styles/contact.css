@@ -16,7 +16,7 @@
 }
 body{
     font-family: var(--paragraph-font);
-    max-width: 900px;
+    max-width: 960px;
     padding: 20px;
     margin: 0 auto;
 }
@@ -38,7 +38,6 @@ header{
     font-size: 20px;
     border-bottom: 5px solid white;
 }
-
 nav{
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
@@ -60,65 +59,56 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-.hero{
+main{
     display: flex;
-    flex-direction: column;
-    background-size: cover;
-}
-.hero-img{
-    width: 100%;
-    position: relative;
-}
-h1{
-    margin: 0 auto;
-    position: absolute;
-    font-size: 60px;
-    background-color:rgb(46, 46, 231, 0.2);
-    width: 900px;
-    text-align: center;
-    color: white;
-    
-}
-article{
-    display: flex;
-    position: absolute;
-    align-self: center;
-    margin-top: 200px;
-    background-color:rgb(46, 46, 231, 0.6);
-    flex-wrap: wrap;
-    width: 700px
-}
-.article{
-    color: white;
-}
-.history{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-.adventure{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    border:  5px solid gray;
+    font-size: 20px;
+    border-bottom: 5px solid white;
 }
 h2{
     margin: 0 auto;
+    background-color: grey;
+    text-size-adjust: 10px;
+    
+    text-align:center;
+    -webkit-text-fill-color: white;
+    
 }
-.adventure-img{
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
-    flex-direction: row;
+.contact-info{
+    width: 600px;
+    text-align: right;
+    background-color: white;
+    -webkit-text-fill-color: black;
+}
+form{
+    background-color: grey;
+    text-align: left;
+    -webkit-text-fill-color: white;
 }
 footer{
     display: grid;
     grid-template-columns: 2fr 1fr ;
     grid-gap: 5px;
     background-color: grey;
-    border: 5px solid grey;
+    border: 1px solid grey;
     -webkit-text-fill-color: white;
     font-size: 20px;
 }
-
 figcaption{
     text-align: center;
+}
+input,
+textarea,
+select,
+button{
+  width: 250px;
+  margin: 0;
+  box-sizing: border-box;
+}
+form p{
+    padding-left: 0;
+}
+button{
+    -webkit-text-fill-color: black;
 }
