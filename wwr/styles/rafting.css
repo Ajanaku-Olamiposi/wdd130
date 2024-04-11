@@ -59,7 +59,22 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-main{
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-gap: 5px;
+    background-color: grey;
+    border: 1px solid grey;
+    -webkit-text-fill-color: white;
+    font-size: 20px;
+}
+figcaption{
+    text-align: center;
+}
+
+/* contact.html */
+
+.contact{
     display: flex;
     flex-direction: row-reverse;
     border:  5px solid gray;
@@ -86,18 +101,6 @@ form{
     text-align: left;
     -webkit-text-fill-color: white;
 }
-footer{
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    grid-gap: 5px;
-    background-color: grey;
-    border: 1px solid grey;
-    -webkit-text-fill-color: white;
-    font-size: 20px;
-}
-figcaption{
-    text-align: center;
-}
 input,
 textarea,
 select,
@@ -105,6 +108,10 @@ button{
   width: 250px;
   margin: 0;
   box-sizing: border-box;
+}
+input,
+textarea{
+    -webkit-text-fill-color: black;
 }
 form p{
     padding-left: 0;
@@ -115,4 +122,125 @@ button{
 iframe{
     width: 415px;
     height: 265px;
+}
+
+/* trip.html */
+
+.trip{
+    background-color: grey;
+    -webkit-text-fill-color: white;
+    border-bottom: 5px solid white;
+}
+.figure{
+    -webkit-text-fill-color:  yellow;
+}
+table {
+    border: 2px solid white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    font-size: 23;
+  }
+  
+  th,
+  td {
+    border: 2px solid white;
+  }
+
+/* About.html */
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+.hero-img{
+    width: 100%;
+    position: relative;
+}
+.hero h1{
+    margin: 0 auto;
+    position: absolute;
+    font-size: 60px;
+    background-color: rgb(128,128,128,0.9);
+    width: 960px;
+    text-align: center;
+    color: white;
+    
+}
+article{
+    display: flex;
+    position: absolute;
+    align-self: center;
+    margin-top: 200px;
+    background-color: rgb(128,128,128,0.9);
+    flex-wrap: wrap;
+    width: 700px
+}
+.article{
+    color: white;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.adventure{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin: 0 auto;
+}
+.adventure-img{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.about-us{
+    background-color: grey;
+    border-bottom: 5px solid white;
+}
+
+/* index.html */
+.index{
+    width: 100%;
+    position: relative;
+}
+.index-form{
+    position: absolute;
+    align-self: center;
+    margin-top: -120px;
+    width: 960px;
+    background-color: rgb(128,128,128,0.3);
+    text-align: center;
+}
+.index-form h1{
+    background-color: rgb(128,128,128,0.3);
+}
+.purpose{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    margin-inline: auto;
+    position: absolute;
+    margin-top: -580px;
+    text-align: center;
+    width: 960px;
+    -webkit-text-fill-color: white;
+}
+.purpose-img{
+    display: flex;
+    justify-self: center;
+    float: right;
+    height: 200px;
+}
+.purpose p{
+    background-color: rgb(128,128,128,0.6);
+    
+}
+.purpose h1{
+    background-color: rgb(128,128,128,0.6);
+    width: 960px;
 }
